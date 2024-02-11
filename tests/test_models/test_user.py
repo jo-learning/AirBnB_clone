@@ -15,7 +15,7 @@ from models.user import User
 
 
 class TestUser_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the User class."""
+    """Unittests of testing instantiation for User class."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(User, type(User()))
@@ -142,7 +142,7 @@ class TestUser_save(unittest.TestCase):
 
 
 class TestUser_to_dict(unittest.TestCase):
-    """Unittests for testing to_dict method of the User class."""
+    """Unittests for testing to_dict method of User class."""
 
     def test_to_dict_type(self):
         self.assertTrue(dict, type(User().to_dict()))

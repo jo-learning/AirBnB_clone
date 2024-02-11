@@ -9,7 +9,7 @@ class BaseModel:
     """Represents the BaseModel of the HBnB project."""
 
     def __init__(self, *args, **kwargs):
-        """Initialize a new BaseModel.
+        """Initialize new BaseModel.
 
         Args:
             *args (any): Unused.
@@ -34,9 +34,9 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """Return the dictionary of the BaseModel instance.
+        """Return the dictionary of BaseModel instance.
 
-        Includes the key/value pair __class__ representing
+        Include the key/value pair __class__ representing
         the class name of the object.
         """
         dictionary = self.__dict__.copy()
